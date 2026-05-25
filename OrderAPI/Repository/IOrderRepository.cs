@@ -7,5 +7,6 @@ namespace OrderAPI.Repository
     {
         Task<ServiceResponse> AddOrderAsync(Order order);
         Task<IEnumerable<Order>> GetAllOrderAsync();
+        Task<OrderSummary> GetOrderSummaryAsync();
     }
 }

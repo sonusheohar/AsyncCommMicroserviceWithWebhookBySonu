@@ -21,6 +21,5 @@ namespace OrderAPI.Controllers
 
         [HttpGet("orders")]
         public async Task<ActionResult<IEnumerable<Order>>> GetOrdersAsync()=> Ok(await _orderService.GetAllOrderAsync());
-
     }
 }
