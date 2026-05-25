@@ -1,3 +1,4 @@
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using ProductAPI.Data;
 using ProductAPI.Repository;
@@ -14,6 +15,20 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ProductDbContext>(o => o.UseSqlite(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
+
+//Start Rabbit MQ Connection
+builder.Services.AddMassTransit(x =>
+{
+    x.UsingRabbitMq((context, config) =>
+    {
+        config.Host("rabbitmq://localhost", cr =>
+        {
+            cr.Username("guest");
+            cr.Password("guest");
+        });
+    });
+});
+//End Rabbit MQ Connection
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
