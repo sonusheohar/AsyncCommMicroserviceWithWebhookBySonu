@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderAPI", "OrderAPI\OrderA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailNotificationWebhook", "EmailNotificationWebhook\EmailNotificationWebhook.csproj", "{7B88EE31-0EAC-436F-9464-39D70757911B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLib", "SharedLib\SharedLib.csproj", "{98557C2B-416E-4390-85F3-4E750FD92A9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7B88EE31-0EAC-436F-9464-39D70757911B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B88EE31-0EAC-436F-9464-39D70757911B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B88EE31-0EAC-436F-9464-39D70757911B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98557C2B-416E-4390-85F3-4E750FD92A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98557C2B-416E-4390-85F3-4E750FD92A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98557C2B-416E-4390-85F3-4E750FD92A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98557C2B-416E-4390-85F3-4E750FD92A9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
